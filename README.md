@@ -27,6 +27,10 @@ from prices import load_prices
 aapl = load_prices("AAPL")
 ```
 
+Recreate the comparison chart with `uv run python scripts/plot_stock_prices.py`.
+It plots each stock's closing-price change from its first available 2024 close
+on the same chart and saves the result to `figures/stock_prices_since_2024.png`.
+
 ## Data
 
 The files in `data/raw/` are daily prices from 2 January 2024 to 31 December 2025, one file per ticker, downloaded on 14 October 2026 with [yfinance](https://github.com/ranaroussi/yfinance):
